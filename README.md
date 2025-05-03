@@ -1,37 +1,67 @@
-Analyse du dataset Facebook100
+# 📊 Facebook100 Dataset Analysis
 
-Ce dépôt contient un notebook Jupyter (fbProject.ipynb) dédié à l’analyse exploratoire et à l’étude du réseau social Facebook tel qu’il existait en 2005, à travers le dataset Facebook100.
-Contexte et objectif
+This repository provides an in-depth exploratory data analysis (EDA) of the **Facebook100** dataset through a Jupyter notebook: `fbProject.ipynb`. The study focuses on the structure and dynamics of early Facebook social networks as they existed in **2005**.
 
-Facebook, lancé le 4 février 2004 à Harvard sous le nom "thefacebook.com", était initialement un réseau social réservé aux étudiants de certaines universités américaines. En septembre 2005, Facebook s’était étendu à plus de 800 collèges et universités, comptant environ 6 millions d’utilisateurs, bien que d’autres réseaux sociaux comme MySpace et Friendster dominaient encore le paysage
+## 📌 Table of Contents
 
-.
+- [Background & Objective](#background--objective)
+- [Notebook Overview](#notebook-overview)
+- [Dataset](#dataset)
+- [Installation & Requirements](#installation--requirements)
+- [How to Run](#how-to-run)
+- [Limitations & Biases](#limitations--biases)
+- [License](#license)
 
-Le dataset Facebook100 est une capture instantanée anonymisée des connexions d’amitié entre plus de 1,2 million d’utilisateurs affiliés aux 100 premiers collèges ayant rejoint Facebook, avec près de 94 millions de liens d’amitié non pondérés et non orientés
+## 🧠 Background & Objective
 
-. Chaque utilisateur est caractérisé par des attributs sociaux tels que le statut (étudiant, alumni, personnel, etc.), le dortoir, la majeure, le genre et l’année de diplôme.
+Launched on February 4, 2004, at Harvard under the name *“thefacebook.com”*, Facebook rapidly expanded to over 800 U.S. colleges by September 2005, reaching more than 6 million users.
 
-L’objectif principal de ce notebook est d’explorer la structure sociale de ces réseaux universitaires, d’analyser les variables démographiques et sociales associées, et de mieux comprendre la dynamique d’adoption et de formation des liens sur Facebook à cette époque.
-Contenu du notebook
+The **Facebook100** dataset offers an anonymized snapshot of this early era, capturing friendship networks within the first 100 colleges on Facebook. The dataset includes:
 
-    Présentation et nettoyage des données du dataset Facebook100
+- Over **1.2 million users**
+- Nearly **94 million undirected friendship edges**
+- Rich metadata: user status (undergraduate, graduate, alumni, staff, etc.), gender, major, dormitory, and graduation year
 
-    Analyse descriptive des attributs sociaux (statut, genre, majeure, dortoir, année de diplôme)
+**Objective**: Analyze and visualize the social network structures, study user demographics, and explore patterns of friendship formation and Facebook adoption across universities.
 
-    Étude des réseaux d’amitié : densité, distribution des liens, caractéristiques par université
+## 📒 Notebook Overview
 
-    Visualisations des réseaux et des distributions des variables
+The notebook includes:
 
-    Analyse de l’adoption de Facebook par rapport à la taille des universités
+- 📥 **Data Loading & Cleaning**  
+  Import and preprocess Facebook100 data
 
-    Discussion sur les biais et limites des données (valeurs manquantes, comptes multiples, etc.)
+- 📊 **Descriptive Analysis**  
+  Explore attributes such as gender, major, status, dormitory, and graduation year
 
-Prérequis
+- 🔗 **Network Structure Analysis**  
+  Study graph properties: density, degree distributions, and subgraph patterns per college
 
-Pour exécuter ce notebook, il est recommandé d’avoir :
+- 📈 **Visualizations**  
+  Graph visualizations and attribute distribution plots
 
-    Python 3.x
+- 📉 **Adoption Trends**  
+  Compare Facebook adoption rates to enrollment sizes across universities
 
-    Jupyter Notebook ou JupyterLab
+- ⚠️ **Discussion**  
+  Address data quality issues: missing values, duplicate or inactive users, and off-campus profiles
 
-    Bibliothèques Python : pandas, numpy, matplotlib, seaborn, networkx (pour l’analyse réseau), scikit-learn (si modélisation)
+## 📂 Dataset
+
+The [Facebook100 dataset](https://archive.org/details/oxford-2005-facebook-matrix) was originally compiled by researchers for network science research. It is publicly available and anonymized for privacy.
+
+> ⚠️ You are responsible for respecting any data usage and privacy policies associated with the dataset.
+
+## ⚙️ Installation & Requirements
+
+You will need the following to run the notebook:
+
+- Python 3.x
+- Jupyter Notebook or JupyterLab
+
+### Required Python Libraries
+
+Install dependencies via pip:
+
+```bash
+pip install pandas numpy matplotlib seaborn networkx scikit-learn
