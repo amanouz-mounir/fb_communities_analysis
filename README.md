@@ -8,9 +8,6 @@ This repository provides an in-depth exploratory data analysis (EDA) of the **Fa
 - [Notebook Overview](#notebook-overview)
 - [Dataset](#dataset)
 - [Installation & Requirements](#installation--requirements)
-- [How to Run](#how-to-run)
-- [Limitations & Biases](#limitations--biases)
-- [License](#license)
 
 ## 🧠 Background & Objective
 
